@@ -1,0 +1,70 @@
+{
+  "name": "du-manage-vue2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "buildTest": "set NODE_ENV=test&&vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@better-scroll/core": "^2.4.1",
+    "@better-scroll/mouse-wheel": "^2.4.1",
+    "@better-scroll/scroll-bar": "^2.4.1",
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "echarts": "^4.9.0",
+    "element-ui": "^2.15.3",
+    "howler": "^2.2.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "nprogress": "^0.2.0",
+    "qrcode": "^1.4.4",
+    "simple-js-export": "^1.0.0",
+    "v-charts": "^1.19.0",
+    "vconsole": "^3.9.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.2",
+    "vue-socket.io": "^3.0.10",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.13",
+    "@vue/cli-plugin-eslint": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "no-parsing-error": "off",
+      "valid-v-on": "off",
+      "no-console": "off",
+      "no-empty": "off",
+      "no-undef": "off",
+      "no-unused-vars": "off",
+      "no-mixed-spaces-and-tabs": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
