@@ -1,6 +1,6 @@
 <template>
   <div style="margin-left: 10px;">
-    <du-card>
+    <du-card style="margin-bottom: 10px;">
       <div slot="title">
         <du-button type="primary" @click="$router.go(-1)">返回 </du-button>
       </div>
@@ -42,6 +42,9 @@
       </du-field>
       <du-field title="编号" type="textarea"> </du-field>
     </du-card>
+    <du-card title="操作记录">
+      <du-table :data="historyData" :columns="historyColumns"> </du-table>
+    </du-card>
   </div>
 </template>
 <script>
@@ -58,6 +61,12 @@ export default {
   data() {
     return {
       data: {},
+      historyData: [],
+      historyColumns: [
+        { value: "name", label: "操作人" },
+        { value: "content", label: "内容" },
+        { value: "createTime", label: "时间" },
+      ],
     }
   },
   methods: {

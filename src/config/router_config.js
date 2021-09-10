@@ -1,4 +1,4 @@
-import BasicLayout from "../views/_layout.vue"
+import BasicLayout from "../layouts/BasicLayout"
 import login from "../views/login"
 
 /**

@@ -5,7 +5,6 @@
 
 # To do
 
-- select add icon to be different from input
 - Slider
 - Date
 - Layout

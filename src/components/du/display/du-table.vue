@@ -29,11 +29,9 @@
         </tr>
       </draggable>
     </table>
-    <div style="display: flex;flex-direction: row-reverse;">
-      <du-pagination
-        v-model="pagination.current"
-        :total="total"
-      ></du-pagination>
+    <div style="display: flex;flex-direction: row-reverse;" v-if="data.length">
+      <du-pagination :value="pagination.current" :total="total">
+      </du-pagination>
     </div>
     <div
       v-if="!data.length"
@@ -55,7 +53,7 @@ export default {
     showNo: { type: Boolean, default: false },
     columns: { type: Array, default: () => [] },
     data: { type: Array, default: () => [] },
-    pagination: { type: Object, default: () => {} },
+    pagination: { type: Object, default: () => ({}) },
   },
   computed: {
     total() {
